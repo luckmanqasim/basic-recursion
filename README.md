@@ -4,7 +4,6 @@
 This code recursively goes through a string and returns the number of consonants, vowels and other characters in the string, in form of a list.
 
 # generate-for.py
-
 This code takes an input number and returns, in descending order, all the binary numbers of the length represented by the input number.
 
 # generate.py
