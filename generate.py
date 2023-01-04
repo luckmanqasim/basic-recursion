@@ -1,4 +1,7 @@
-# Given 'n' as input, generate a list of numbers from 2^n-1 down to 0
+# Given 'n' as input, generate a list of numbers from 2^n-1 down to 0\
+
+from prefix import prefix_items
+
 def generateReverseOrder(n):
   # Implement me!
   if n == 0:
@@ -12,14 +15,6 @@ def generateReverseOrder(n):
     complete_strings.extend(prefix_items(partial_strings, 0))
 
     return complete_strings
-
-# A helper resursive function, which prefixes each element of a list with the input digit
-def prefix_items(partial_strings, digit):
-    if len(partial_strings) == 0:
-        return []
-    else:
-        new_item = str(digit) + partial_strings[0]
-        return [new_item] + prefix_items(partial_strings[1:], digit)
 
 
 # Tester code; do not make any changes below here
